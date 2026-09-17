@@ -90,11 +90,14 @@ Os testes usam o test runner nativo do Node.js (`node --test`), sem dependência
 
 ## 📡 Rotas da API
 
-| Método | Endpoint        | Descrição                            | Status de Retorno                  |
-| ------ | --------------- | ------------------------------------ | ---------------------------------- |
-| `GET`  | `/produtos`     | Retorna a lista de todos os produtos | `200 OK`                           |
-| `GET`  | `/produtos/:id` | Busca um produto pelo ID             | `200 OK` ou `404 Not Found`        |
-| `POST` | `/produtos`     | Cadastra um novo produto             | `201 Created` ou `400 Bad Request` |
+| Método | Endpoint            | Descrição                                | Status de Retorno                  |
+| ------ | ------------------- | ----------------------------------------- | ----------------------------------- |
+| `GET`  | `/produtos`         | Retorna a lista de todos os produtos      | `200 OK`                           |
+| `GET`  | `/produtos/:id`     | Busca um produto pelo ID                  | `200 OK` ou `404 Not Found`        |
+| `POST` | `/produtos`         | Cadastra um novo produto                  | `201 Created` ou `400 Bad Request` |
+| `GET`  | `/funcionarios`     | Retorna a lista de todos os funcionários  | `200 OK`                           |
+| `GET`  | `/funcionarios/:id` | Busca um funcionário pelo ID              | `200 OK` ou `404 Not Found`        |
+| `POST` | `/funcionarios`     | Cadastra um novo funcionário              | `201 Created` ou `400 Bad Request` |
 
 ---
 
