@@ -51,7 +51,7 @@ marinke-node/
     ├── models/
     │   └── produto.model.js
     ├── services/
-    │   └── produtos.service.js
+    │   └── produto.service.js
     ├── controllers/
     │   └── produto.controller.js
     └── routes/
@@ -99,7 +99,7 @@ module.exports = Produto;
 
 ```
 
-### 2. O Service (`src/services/produtos.service.js`)
+### 2. O Service (`src/services/produto.service.js`)
 
 ```javascript
 const Produto = require("../models/produto.model");
@@ -139,7 +139,7 @@ module.exports = { listar, buscarPorId, criar };
 ### 3. O Controller (`src/controllers/produto.controller.js`)
 
 ```javascript
-const service = require("../services/produtos.service");
+const service = require("../services/produto.service");
 
 exports.listar = (req, res) => {
   const produtos = service.listar();
