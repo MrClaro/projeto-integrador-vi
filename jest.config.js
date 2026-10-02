@@ -1,0 +1,24 @@
+/** @type {import('jest').Config} */
+module.exports = {
+  preset: "ts-jest",
+  testEnvironment: "node",
+  // Cobertura medida em cima do CRUD de produtos (routes -> controller ->
+  // service -> repository), que é o que o professor pediu pra testar.
+  collectCoverageFrom: [
+    "src/routes/produto.routes.ts",
+    "src/controllers/produto.controller.ts",
+    "src/services/produto.service.ts",
+    "src/repositories/produto.repository.sequelize.ts",
+    "src/models/produto.model.ts"
+  ],
+  moduleFileExtensions: ["ts", "js", "json", "node"],
+  testMatch: ["<rootDir>/src/__tests__/**/*.test.ts"],
+  coverageThreshold: {
+    global: {
+      statements: 90,
+      branches: 90,
+      functions: 90,
+      lines: 90
+    }
+  }
+};
