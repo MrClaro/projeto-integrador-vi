@@ -2,6 +2,7 @@
 module.exports = {
   preset: "ts-jest",
   testEnvironment: "node",
+  roots: ["<rootDir>/src"],
   // Cobertura medida em cima do CRUD de produtos (routes -> controller ->
   // service -> repository), que é o que o professor pediu pra testar.
   collectCoverageFrom: [
@@ -11,8 +12,6 @@ module.exports = {
     "src/repositories/produto.repository.sequelize.ts",
     "src/models/produto.model.ts"
   ],
-  moduleFileExtensions: ["ts", "js", "json", "node"],
-  testMatch: ["<rootDir>/src/__tests__/**/*.test.ts"],
   coverageThreshold: {
     global: {
       statements: 90,
